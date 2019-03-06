@@ -4,44 +4,41 @@ Created with love by: Hasan
   
 A game where the user guesses a number between 1-10. 
 
+
+You can view the site here https://thirsty-dubinsky-e1a7bc.netlify.com/
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories.
 
-To create a GIF, use [LiceCap](http://www.cockos.com/licecap/), [RecordIt](http://www.recordit.co), or [Loom](http://www.useloom.com), and link the image here in the markdown.
 
-```
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-```
+<img src='http://g.recordit.co/5d0Ag2PPZN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 ## User Stories
 
 The following **required** functionalities are completed (this is a sample):
 
-* [x] Top navigation bar with dropdown buttons
-* [x] Banner with background image, white text, and a green button
-* [x] Color or text change when mouse hovers over
-* [x] At least 3 different body sections with different background images or colors
-* [x] 2 (or 3) card items per row in a body section
-* [x] Footer with social icons that link to the actual social pages
 
-The following **optional** features are implemented:
+* [x] Guess input from user
+* [x] Generate random number and compare with guess input from user
+* [x] Text color change when guess input is corrector or incorrect.
+* [x] Reset button that resets all content
 
-* [x] Add favicon to the page
-* [ ] Animation on an element
-* [ ] Navigation, contact, sitemap, privacy policy, term of use, etc in footer
-* [ ] Bootstrap carousel for banner
-* [ ] Banner with background video
 
 The following **additional** features are implemented:
 
-* [x] List anything else that you can get done to improve the page!
+* [x] Timeout on result after new guess is made
 
 ## Time Spent and Lessons Learned
 
-Time spent: **X** hours spent in total.
+Time spent: **3** hours spent in total.
 
 Describe any challenges encountered while building the app.
+
+Creating a timeout on result output
+
 
 ## License
 

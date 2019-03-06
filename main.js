@@ -40,7 +40,6 @@ restartButton.addEventListener("click", function(){
     gif.innerHTML="";
 });
 
-
 // run function that generates number between 1-10
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -59,9 +58,5 @@ function hideText() {
     result.style.opacity = 0 ; 
     }
     
-
-
-
-
 
 
