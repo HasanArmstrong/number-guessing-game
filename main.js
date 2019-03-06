@@ -33,6 +33,12 @@ else if (userGuess == randomNumberGenerator) {
     setTimeout(showText,500);
 });
 
+restartButton.addEventListener("click", function(){
+    randomNumberGenerator = getRandomInt(1, 10);
+    document.getElementById("userGuess").value="";
+    document.getElementById("result").innerHTML="";
+    gif.innerHTML="";
+});
 
 
 // run function that generates number between 1-10
@@ -53,7 +59,6 @@ function hideText() {
     result.style.opacity = 0 ; 
     }
     
-
 
 
 
