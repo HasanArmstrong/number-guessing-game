@@ -2,6 +2,7 @@
 let button= document.getElementById("button");
 let restartButton= document.getElementById("restartButton");
 let result=document.getElementById("result");
+
 // let text = document.getElementById('hello');
 // assign function to variable
 let randomNumberGenerator = getRandomInt(1, 10);
@@ -32,12 +33,7 @@ else if (userGuess == randomNumberGenerator) {
     setTimeout(showText,500);
 });
 
-restartButton.addEventListener("click", function(){
-    randomNumberGenerator = getRandomInt(1, 10);
-    document.getElementById("userGuess").value="";
-    document.getElementById("result").innerHTML="";
-    gif.innerHTML="";
-});
+
 
 // run function that generates number between 1-10
 function getRandomInt(min, max) {
@@ -57,6 +53,8 @@ function hideText() {
     result.style.opacity = 0 ; 
     }
     
+
+
 
 
 
