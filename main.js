@@ -2,35 +2,38 @@
 let button= document.getElementById("button");
 let restartButton= document.getElementById("restartButton");
 let result=document.getElementById("result");
+
+// let text = document.getElementById('hello');
 // assign function to variable
-let randomNumberGenerator = getRandomInt(0, 10);
-let checkIfNumber;
+let randomNumberGenerator = getRandomInt(1, 10);
 
 button.addEventListener("click", function(){
 
+hideText();
 // takes user input
 let userGuess = document.getElementById("userGuess").value;
 // if number is == to output of function produce well done message (green color)
-if (userGuess == ""||isNaN(userGuess) == true||userGuess>10||userGuess<0) {
+if ( !userGuess ||isNaN(userGuess) == true|| userGuess>10||userGuess<=0) {
     result.innerHTML="Please Enter a Number Between 1-10";
     }
+
 else if (userGuess < randomNumberGenerator) {
-    result.innerHTML="<p class='gHigher'>Guess Higher";
+    result.innerHTML="Guess Higher";
     }
 
 else if (userGuess > randomNumberGenerator) {
-    result.innerHTML="<p class='gHigher'>Guess Lower</p>";
+    result.innerHTML="Guess Lower";
     }
+
 else if (userGuess == randomNumberGenerator) {
-        result.innerHTML="<p class='wellDone'>Well done</p>"; 
+    result.innerHTML="<p class='wellDone'>Well done</p>"; 
+    gif.innerHTML="<img src='img/congrats.gif'></img>"
     }
+
+    setTimeout(showText,500);
 });
 
-restartButton.addEventListener("click", function(){
-    randomNumberGenerator = getRandomInt(0, 10);
-    document.getElementById("userGuess").value="";
-    document.getElementById("result").innerHTML="";
-});
+
 
 // run function that generates number between 1-10
 function getRandomInt(min, max) {
@@ -42,13 +45,18 @@ function getRandomInt(min, max) {
 console.log(randomNumberGenerator);
 
 
+function showText() { 
+    result.style.opacity = 1 ; 
+    }
+
+function hideText() { 
+    result.style.opacity = 0 ; 
+    }
+    
 
 
 
 
 
-// if number is < than the output of function produce guess higher message (red color)
 
-// if number is > than the output of function produce guess lower message (red color)
 
-// Have reset button to clear guesses
