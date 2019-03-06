@@ -2,6 +2,7 @@
 let button= document.getElementById("button");
 let restartButton= document.getElementById("restartButton");
 let result=document.getElementById("result");
+
 // let text = document.getElementById('hello');
 // assign function to variable
 let randomNumberGenerator = getRandomInt(1, 10);
@@ -57,8 +58,5 @@ function hideText() {
     result.style.opacity = 0 ; 
     }
     
-
-
-
 
 

@@ -4,19 +4,22 @@ Created with love by: Hasan
   
 A game where the user guesses a number between 1-10. 
 
+
 You can view the site here https://thirsty-dubinsky-e1a7bc.netlify.com/
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories.
 
-```
+
 <img src='http://g.recordit.co/5d0Ag2PPZN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-```
+
 
 ## User Stories
 
 The following **required** functionalities are completed (this is a sample):
+
 
 * [x] Guess input from user
 * [x] Generate random number and compare with guess input from user
@@ -34,7 +37,8 @@ Time spent: **3** hours spent in total.
 
 Describe any challenges encountered while building the app.
 
-Creating timeout feature on result output
+Creating a timeout on result output
+
 
 ## License
 
